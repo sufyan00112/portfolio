@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./new.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">  
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "A0_g6JfOsYQheW0wM",
+      });
+   })();
+</script>
+<script src="./new.js"></script>
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">PORTFOLIO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="text-center">
+            <h1>SUFYAN KHALID</h1>
+            <p>WEB DEVELOPER</p>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="container py-5">
+        <h2 class="text-center">About Me</h2>
+        <p class="text-center">Hello! I'm a passionate web developer with a keen eye for creating clean, user-friendly, and responsive websites. With experience in HTML, CSS, and JavaScript, I specialize in building minimalistic, visually appealing designs that prioritize functionality and performance. I'm constantly learning and experimenting with new technologies to stay on top of industry trends. My goal is to deliver seamless digital experiences that not only meet but exceed expectations.</p>
+    </section>
+    
+    <!-- Skills Section -->
+<section id="skills" class="container py-5">
+    <h2 class="text-center">SKILLS</h2>
+    <div class="row text-center">
+        <div class="col-md-4">
+            <i class="fab fa-html5 skill-icon"></i>
+         <img src="./html5-brands-solid.svg" alt="HTML" class="skill-image">
+            <br>HTML
+        </div>
+        <div class="col-md-4">
+            <i class="fab fa-css3-alt skill-icon"></i>
+         <img src="./css3-alt-brands-solid.svg" alt="CSS" class="skill-image">
+            <br>CSS
+        </div>
+        <div class="col-md-4">
+            <i class="fab fa-js skill-icon"></i>
+         <img src="./square-js-brands-solid.svg" alt="JavaScript" class="skill-image">
+            <br>JavaScript
+        </div>
+    </div>
+</section>
+<section id="projects" class="container py-5">
+    <h2 class="text-center">PROJECTS</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="./applework.png" class="card-img-top" alt="Project 1">
+                <div class="card-body text-center">
+                    <h5 class="card-title">clone webpage of apple</h5>
+                    <p class="card-text"> I meticulously recreated the Apple website, focusing on its seamless design, responsiveness, and smooth interactions using HTML, CSS, and JavaScript</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="./ease mytrip.png" class="card-img-top" alt="Project 2">
+                <div class="card-body text-center">
+                    <h5 class="card-title">clone webpage of Easemytrip</h5>
+                    <p class="card-text">Developed an Easemytrip clone webpage with a responsive design, replicating key features such as product listings, navigation, and a modern UI. Focused on clean HTML, CSS, and JavaScript to enhance functionality and user experience</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="./youtubework.png" class="card-img-top" alt="Project 3">
+                <div class="card-body text-center">
+                    <h5 class="card-title">responsive webpage of youtube </h5>
+                    <p class="card-text">YouTube clone webpage with a responsive layout, featuring video thumbnails, navigation, and a sleek UI. Designed using HTML, CSS, and JavaScript to replicate the platform's core functionalities and enhance user experience</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+<section id="contact" class="container py-5">
+    <h2 class="text-center" style="font-family: 'Times New Roman', Times, serif;">CONTACT ME</h2>
+    <form onsubmit="sendMail(event)"> <!-- Prevent default form submission -->
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+</section>
+
+</div>
+<div>
+    <h1 style="text-align: center;font-size: small;color: black;">©2025. All Rights Reserved.<h1>
+</div>
+    
+</body>
+</html>
